@@ -1,231 +1,468 @@
-<div align="center">
+You are a Senior RTL Design Engineer, FPGA Engineer, Verification Engineer, and Technical Documentation Specialist.
 
-# 🔄 Priority-Based Token Passing Arbiter
+Your task is to analyze this entire repository and rewrite the README into a professional GitHub README.
 
-### Fair, Starvation-Free Resource Arbitration using Verilog HDL
+IMPORTANT:
+First analyze the repository before writing anything.
 
-<p align="center">
+Read every file in the workspace, including:
 
-<img src="https://img.shields.io/badge/Language-Verilog-blue?style=for-the-badge"/>
+- README.md
+- rtl/token_arbiter.v
+- testbench/tb_token_arbiter.v
+- docs/Project_Report.pdf
+- simulation/
+- images/
+  - block_diagram.png
+  - flowchart.png
+  - waveform1.png
+  - waveform2.png
+  - waveform3.png
+- LICENSE
+- .gitignore
 
-<img src="https://img.shields.io/badge/RTL-Design-green?style=for-the-badge"/>
+Understand the actual RTL implementation and SystemVerilog testbench before generating documentation.
 
-<img src="https://img.shields.io/badge/Simulation-Icarus%20Verilog-orange?style=for-the-badge"/>
+Do NOT create generic documentation.
 
-<img src="https://img.shields.io/badge/Waveform-GTKWave-purple?style=for-the-badge"/>
+======================================================================
+OBJECTIVE
+======================================================================
 
-</p>
+Create a modern, professional GitHub README that accurately documents the project.
 
-Design and implementation of a **Priority-Based Token Passing Arbiter** for efficient and starvation-free resource arbitration in digital systems.
+The README should demonstrate:
 
-</div>
+• RTL Design
+• Digital Hardware Design
+• Verilog HDL
+• Functional Verification
+• Digital System Design
+• Technical Documentation
 
----
+The README should be suitable for an open-source GitHub repository.
 
-# 📖 Project Overview
+======================================================================
+IMPORTANT RULES
+======================================================================
 
-The **Priority-Based Token Passing Arbiter** is a digital hardware design developed using **Verilog HDL** to efficiently manage access to a shared resource among multiple requesters.
+1. Never invent functionality.
 
-Unlike conventional fixed-priority arbiters, this design employs a **rotating token mechanism** that ensures every requester receives fair access while eliminating starvation. The arbiter grants access only to the requester currently holding the token and requesting the shared resource.
+2. Never invent RTL modules.
 
-The complete design has been simulated and functionally verified using **Icarus Verilog** and **GTKWave**.
+3. Never invent algorithms.
 
----
+4. Never invent FPGA implementation results.
 
-# 🎯 Objectives
+5. Never invent synthesis reports.
 
-- Design a Priority-Based Token Passing Arbiter using Verilog HDL.
-- Implement fair resource arbitration using a rotating token.
-- Eliminate starvation among multiple requesters.
-- Develop an RTL implementation suitable for digital hardware.
-- Verify functionality through simulation.
-- Analyze system behavior using waveform visualization.
+6. Never invent timing reports.
 
----
+7. Never invent performance numbers.
 
-# ✨ Features
+8. Never invent verification coverage.
 
-- 🔄 Token-Based Arbitration
-- ⚖️ Fair Scheduling Mechanism
-- 🚫 Starvation-Free Access
-- ⚡ RTL Design using Verilog HDL
-- 🧪 Functional Verification
-- 📊 GTKWave Waveform Analysis
-- 🖥️ Synthesizable Hardware Design
-- 📈 Deterministic Grant Generation
+9. Never invent hardware validation.
 
----
+10. Never mention specific companies or recruiters.
 
-# 🛠 Technology Stack
+11. Only describe what actually exists in the repository.
 
-| Category | Technology |
-|----------|------------|
-| Hardware Description | Verilog HDL |
-| Verification | SystemVerilog Testbench |
-| Simulator | Icarus Verilog |
-| Waveform Viewer | GTKWave |
-| IDE | Visual Studio Code |
-| Platform | Windows / Linux |
+12. If something is not implemented, omit it instead of guessing.
 
----
+13. Keep all explanations technically accurate.
 
-# ⚙️ Working Principle
+14. Keep the writing professional and concise.
 
-The arbiter follows a rotating token mechanism to determine which requester receives access to the shared resource.
+======================================================================
+README STRUCTURE
+======================================================================
 
-### Step-by-Step Process
+# Hero Section
 
-1. System initializes the token during reset.
-2. Multiple requesters generate access requests.
-3. The requester holding the current token is checked.
-4. If a valid request exists, the arbiter grants access.
-5. The token rotates to the next requester on the next clock cycle.
-6. The process repeats continuously, ensuring fairness.
+Create a centered hero section containing:
 
----
+Project Title
 
-# 📂 Project Structure
+Priority-Based Token Passing Arbiter
 
-```
-priority-based-token-passing-arbiter/
-│
-├── docs/
-│   └── Project_Report.pdf
-│
-├── images/
-│
-├── rtl/
-│   └── token_arbiter.v
-│
-├── simulation/
-│
-├── testbench/
-│   └── tb_token_arbiter.v
-│
-├── README.md
-├── LICENSE
-└── .gitignore
-```
+Subtitle
 
----
+Fair, Starvation-Free Resource Arbitration using Verilog HDL
 
-# 📊 Functional Analysis
-
-The implemented arbiter provides:
-
-- Fair arbitration among all requesters.
-- Deterministic grant generation.
-- Continuous token rotation.
-- One grant per clock cycle.
-- Starvation-free operation.
-- Conflict-free resource allocation.
-
----
-
-# 📈 Simulation Results
-
-The design was successfully verified using **Icarus Verilog**.
-
-Simulation confirms:
-
-- Correct token rotation.
-- Accurate request-to-grant mapping.
-- Proper synchronization with the system clock.
-- Fair allocation of shared resources.
-- Expected waveform behavior in GTKWave.
-
----
-
-# 🎯 Applications
-
-- System-on-Chip (SoC)
-- Network-on-Chip (NoC)
-- Memory Controllers
-- Bus Arbitration
-- DMA Controllers
-- FPGA Designs
-- Embedded Systems
-- Digital Communication Systems
-
----
-
-# 🚀 Future Enhancements
-
-- Dynamic Priority Scheduling
-- Configurable Number of Requesters
-- FPGA Hardware Implementation
-- AXI Bus Integration
-- Deadlock Detection
-- Performance Optimization for Large Systems
-
----
-
-# 📚 Development Tools
+Professional GitHub badges:
 
 - Verilog HDL
+- RTL Design
 - Icarus Verilog
 - GTKWave
-- Visual Studio Code
-- Git & GitHub
+- MIT License (if available)
 
----
+Provide a concise project introduction.
 
-# 📷 Project Images
+======================================================================
 
-You can add the following images inside the **images/** folder.
+# Project Overview
 
-- Block Diagram
-- Flowchart
-- RTL Architecture
-- GTKWave Output
-- Simulation Results
+Explain:
+
+• What resource arbitration is
+
+• Why arbiters are used
+
+• Shared resource management
+
+• Problems with fixed-priority arbitration
+
+• Advantages of token-passing arbitration
+
+• Fair scheduling
+
+• Starvation-free operation
+
+======================================================================
+
+# Objectives
+
+Improve formatting while preserving the existing objectives.
+
+======================================================================
+
+# Features
+
+Only include implemented features such as:
+
+- Token-based arbitration
+- Fair scheduling
+- Rotating token
+- Starvation-free operation
+- Deterministic grant generation
+- Synthesizable RTL
+- Functional verification
+- GTKWave analysis
+
+======================================================================
+
+# Technology Stack
+
+Create a professional table including:
+
+Hardware Description
+
+Verification
+
+Simulation
+
+Waveform Viewer
+
+IDE
+
+Platform
+
+======================================================================
+
+# System Architecture
+
+Embed
+
+images/block_diagram.png
+
+Center the image.
+
+Explain:
+
+- Request inputs
+- Grant outputs
+- Token register
+- Arbitration logic
+- Clock
+- Reset
+
+======================================================================
+
+# Working Principle
+
+Provide a detailed explanation.
+
+Include a Step-by-Step Algorithm explaining:
+
+1. System initialization
+
+2. Reset operation
+
+3. Rising clock edge
+
+4. Clearing previous grants
+
+5. Checking token owner
+
+6. Grant generation
+
+7. Token rotation
+
+8. Repeat
+
+======================================================================
+
+# Arbitration Flow
+
+Embed
+
+images/flowchart.png
+
+Explain each stage shown in the flowchart.
+
+======================================================================
+
+# RTL Implementation
+
+Analyze the Verilog code.
+
+Explain:
+
+- Module interface
+- Inputs
+- Outputs
+- Registers
+- Sequential logic
+- Combinational logic
+- Reset logic
+- Token rotation
+- Grant generation
+
+Include only one or two small Verilog snippets from the implementation.
+
+Do not paste the complete RTL source code.
+
+Mention:
+
+rtl/token_arbiter.v
+
+======================================================================
+
+# Project Structure
+
+Generate the repository tree.
+
+======================================================================
+
+# Functional Analysis
+
+Explain:
+
+- Fair arbitration
+- Token rotation
+- Conflict-free operation
+- One grant per arbitration cycle (if true for the implementation)
+- Deterministic behavior
+- Starvation-free scheduling
+
+Only include statements supported by the implementation.
+
+======================================================================
+
+# Verification
+
+Analyze the SystemVerilog testbench.
+
+Explain:
+
+- Clock generation
+- Reset sequence
+- Stimulus generation
+- Request patterns
+- Grant verification
+- Simulation flow
+
+Mention:
+
+testbench/tb_token_arbiter.v
+
+======================================================================
+
+# Simulation
+
+Provide commands using Icarus Verilog and GTKWave.
 
 Example:
 
-```markdown
-![Block Diagram](images/block_diagram.png)
+iverilog -o arbiter rtl/token_arbiter.v testbench/tb_token_arbiter.v
 
-![Waveform](images/waveform.png)
-```
+vvp arbiter
 
----
+gtkwave token_arbiter.vcd
 
-# 👥 Team Project
+If the generated VCD filename differs in the repository, use the actual filename from the code.
 
-This project was developed as part of an academic team project.
+======================================================================
 
-### My Contributions
+# Waveform Analysis
 
-- RTL Design
-- Functional Verification
-- Simulation
-- Documentation
-- GitHub Repository Management
+Embed:
 
----
+images/waveform1.png
 
-# 📄 Project Report
+Explain what it verifies.
 
-The complete project documentation is available in:
+Embed:
 
-```
+images/waveform2.png
+
+Explain token rotation and grant generation.
+
+Embed:
+
+images/waveform3.png
+
+Explain the observed arbitration behavior.
+
+Provide technical explanations instead of simply displaying images.
+
+======================================================================
+
+# Applications
+
+Include realistic applications such as:
+
+- Bus arbitration
+- Memory controllers
+- DMA controllers
+- Shared hardware resources
+- FPGA digital systems
+- Embedded systems
+- Digital communication systems
+
+======================================================================
+
+# Future Enhancements
+
+Only suggest realistic improvements such as:
+
+- Configurable requester count
+- Parameterized design
+- Dynamic priority support
+- AXI/AHB integration
+- FPGA implementation
+- Formal verification
+
+======================================================================
+
+# Development Tools
+
+Present as a professional table.
+
+======================================================================
+
+# Project Images
+
+Embed all available images with captions:
+
+- block_diagram.png
+- flowchart.png
+- waveform1.png
+- waveform2.png
+- waveform3.png
+
+Center every image.
+
+Add a concise technical explanation beneath each image.
+
+======================================================================
+
+# Project Report
+
+Provide a link to:
+
 docs/Project_Report.pdf
-```
 
----
+======================================================================
 
-# 📜 License
+# Team Project
 
-This project is released under the **MIT License**.
+State that this was an academic team project if supported by the repository.
 
----
+Then include:
 
-<div align="center">
+## My Contributions
 
-### ⭐ If you found this project useful, consider giving it a star!
+Only list contributions supported by the repository.
 
-**Developed by Mohith M**
+======================================================================
 
-Embedded Systems • IoT • Edge AI • Digital Design
+# License
 
-</div>
+Describe the repository license.
+
+======================================================================
+
+# Author
+
+Create a clean footer.
+
+Include:
+
+Mohith M
+
+Electronics and Communication Engineering Student
+
+Areas of Interest
+
+• Embedded Systems
+
+• Digital Design
+
+• RTL Design
+
+• FPGA
+
+• IoT
+
+• Edge AI
+
+Do not include personal contact information.
+
+======================================================================
+FORMATTING REQUIREMENTS
+======================================================================
+
+Use modern GitHub Markdown.
+
+Center important images.
+
+Use tables.
+
+Use syntax-highlighted code blocks.
+
+Use horizontal separators.
+
+Use clean spacing.
+
+Use emojis sparingly.
+
+Maintain consistent formatting throughout.
+
+Ensure the README renders correctly on GitHub.
+
+======================================================================
+FINAL REVIEW
+======================================================================
+
+Before producing the final README:
+
+• Verify all technical claims against the source code.
+
+• Ensure the README matches the RTL implementation.
+
+• Ensure image paths are correct.
+
+• Ensure repository paths are correct.
+
+• Remove repetitive wording.
+
+• Improve grammar.
+
+• Improve readability.
+
+• Do not mention any technologies that are not actually used.
+
+Output only the final polished README.md in GitHub Markdown.
